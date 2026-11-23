@@ -81,3 +81,34 @@ p {
   margin: 0 auto;
   background: linear-gradient(122.38deg, #8282FF 0.97%, #AC82FF 50.49%, #F882FF 100%);
 }
+.btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 140px;
+  height: 40px;
+  padding: 16px 10px;
+  border-radius: 100px;
+  border: none;
+  font-size: 14px;
+}
+.btnPrimary {
+  background: linear-gradient(122.38deg, #8282FF 0.97%, #AC82FF 50.49%, #F882FF 100%);
+  color: #272727;
+}
+.btnPrimary:hover {
+  background: linear-gradient(122.38deg, #F882FF 0.97%, #AC82FF 50.49%, #8282FF 100%);
+}
+.btnPrimary:active {
+  border: 1px solid var(--primary-pink);
+}
+.btnSecondary {
+  background: linear-gradient(122.38deg, #82FF9B 0.97%, #E5FF82 100%);
+}
+.btnSecondary:hover {
+  background: linear-gradient(122.38deg, #E5FF82 0.97%, #82FF9B 100%);
+}
+.btnSecondary:active {
+  border: 1px solid var(--sec-yellow);
+}
