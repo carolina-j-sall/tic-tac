@@ -110,5 +110,5 @@ p {
   background: linear-gradient(122.38deg, #E5FF82 0.97%, #82FF9B 100%);
 }
 .btnSecondary:active {
-  border: 1px solid var(--sec-yellow);
+  border: 1px solid var(--sec-green);
 }
