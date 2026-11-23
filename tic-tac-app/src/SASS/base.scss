@@ -1,0 +1,32 @@
+// Typography variables
+$font-headline: "Press Start 2P", system-ui;
+$font-body: "Space Mono", monospace;
+
+// Color variables
+$primary-pink: #F882FF;
+$secondary-purple: #AC82FF;
+$thirdary-blue: #8282FF;
+  // Not sure if these will be used or not, can be removed otherwise
+  $sec-turqoise: #82FFED;
+  $sec-green: #82FF9B;
+  $sec-yellow: #E5FF82;
+  $sec-orange: #FFD782;
+  $sec-red: #FF9682;
+  // Black and white colors
+  $black: #272727;
+  $white: #F3F3F3;
+
+// Border color variables
+$border-pink: 1px solid $primary-pink;
+$border-purple: 1px solid $secondary-purple;
+$border-blue: 1px solid $thirdary-blue;
+
+// Gradients
+.gradient-pink-purple {
+  // position: absolute;
+  // width: 248px;
+  // height: 200px;
+  // left: 2409px;
+  // top: 1154px;
+  background: linear-gradient(122.38deg, #8282FF 0.97%, #AC82FF 50.49%, #F882FF 100%);
+}
