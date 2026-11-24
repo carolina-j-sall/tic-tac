@@ -22,6 +22,7 @@
   --border-pink: 1px solid var(--primary-pink);
   --border-purple: 1px solid var(--secondary-purple);
   --border-blue: 1px solid var(--thirdary-blue);
+  --border-yellow: 1px solid var(--sec-yellow);
 }
 
 /* --- Base CSS --- */
@@ -111,4 +112,17 @@ p {
 }
 .btnSecondary:active {
   border: 1px solid var(--sec-green);
+}
+a {
+  text-decoration: none;
+  color: var(--white);
+  border-bottom: var(--border-pink);
+  background-color: transparent;
+  padding: 0 5px;
+}
+a:hover {
+  border-bottom: var(--border-pink);
+  background-color: var(--primary-pink);
+  padding: 0 5px;
+  transition: background-color 0.1s ease-in-out;
 }
