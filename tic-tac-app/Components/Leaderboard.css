@@ -1,0 +1,40 @@
+.leaderboardContainer {
+  margin: 0 auto;
+  padding: 2em;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 1200px;
+}
+.leaderboardTitle {
+  margin-top: 3em;
+}
+.rowContainer {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 80%;
+  /* border: 1px solid var(--secondary-purple); */
+  box-shadow: 0 0 .2rem #fff,
+            0 0 0.1rem #fff,
+            0 0 0.1rem var(--sec-yellow),
+            0 0 0.1rem var(--sec-yellow),
+            0 0 1.5rem var(--sec-yellow),
+            inset 0 0 1.3rem var(--sec-yellow);
+  padding: 0.5em;
+  margin: 2em 0 1em 0;
+}
+.rowContainer_img {
+  margin-left: 3em;
+  margin-right: 3em;
+  padding: 1em;
+}
+.rowContainer_username {
+  margin-right: 3em;
+  padding: 0.5em;
+}
+.rowContainer_score {
+  margin-left: 3em;
+  padding: 0.5em;
+}
+

@@ -1,0 +1,16 @@
+.playAgainModal {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0.5em auto 5em auto;
+  padding: 3em 5em;
+  width: 600px;
+  border: 1px solid var(--sec-green);
+}
+.playAgainTitle {
+  text-align: center;
+}
+.btnLink {
+  color: var(--black);
+  text-decoration: none;
+}
