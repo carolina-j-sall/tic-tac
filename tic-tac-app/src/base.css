@@ -1,0 +1,114 @@
+ /* --- Root DOM variables --- */
+:root {
+   /* Typography variables */
+  --font-headline: "Press Start 2P", system-ui;
+  --font-body: "Space Mono", monospace;
+
+   /* Color variables */
+  --primary-pink: #F882FF;
+  --secondary-purple: #AC82FF;
+  --thirdary-blue: #8282FF;
+     /* Not sure if these will be used or not, can be removed otherwise */
+    --sec-turqoise: #82FFED;
+    --sec-green: #82FF9B;
+    --sec-yellow: #E5FF82;
+    --sec-orange: #FFD782;
+    --sec-red: #FF9682;
+     /* Black and white colors */
+    --black: #272727;
+    --white: #F3F3F3;
+
+   /* Border color variables */
+  --border-pink: 1px solid var(--primary-pink);
+  --border-purple: 1px solid var(--secondary-purple);
+  --border-blue: 1px solid var(--thirdary-blue);
+}
+
+/* --- Base CSS --- */
+body {
+  margin: 0 auto;
+  font-family: var(--font-body);
+  font-size: 18px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.5;
+  background-color: var(--black);
+  color: var(--white);
+}
+h1 {
+  font-family: var(--font-headline);
+  font-size: 2em;
+  line-height: 1.6;
+  color: var(--primary-pink);
+  margin-bottom: 12px;
+}
+h2 {
+  font-family: var(--font-headline);
+  font-size: 1.8em;
+  line-height: 1.6;
+  color: var(--white);
+}
+h3 {
+  font-family: var(--font-headline);
+  font-size: 1.6em;
+  line-height: 1.6;
+  color: var(--secondary-purple);
+}
+h4 {
+  font-family: var(--font-headline);
+  font-size: 1.4em;
+  line-height: 1.6;
+  color: var(--thirdary-blue);
+}
+h5 {
+  font-family: var(--font-headline);
+  font-size: 1.2em;
+  line-height: 1.6;
+  color: var(--sec-green);
+}
+h6 {
+  font-family: var(--font-headline);
+  font-size: 1em;
+  line-height: 1.6;
+  color: var(--sec-yellow);
+}
+p {
+
+}
+.primaryGradient {
+  width: 400px;
+  height: 400px;
+  margin: 0 auto;
+  background: linear-gradient(122.38deg, #8282FF 0.97%, #AC82FF 50.49%, #F882FF 100%);
+}
+.btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 140px;
+  height: 40px;
+  padding: 16px 10px;
+  border-radius: 100px;
+  border: none;
+  font-size: 14px;
+}
+.btnPrimary {
+  background: linear-gradient(122.38deg, #8282FF 0.97%, #AC82FF 50.49%, #F882FF 100%);
+  color: #272727;
+}
+.btnPrimary:hover {
+  background: linear-gradient(122.38deg, #F882FF 0.97%, #AC82FF 50.49%, #8282FF 100%);
+}
+.btnPrimary:active {
+  border: 1px solid var(--primary-pink);
+}
+.btnSecondary {
+  background: linear-gradient(122.38deg, #82FF9B 0.97%, #E5FF82 100%);
+}
+.btnSecondary:hover {
+  background: linear-gradient(122.38deg, #E5FF82 0.97%, #82FF9B 100%);
+}
+.btnSecondary:active {
+  border: 1px solid var(--sec-green);
+}
