@@ -1,0 +1,91 @@
+.auth-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+  background: var(--black) url("/game-bg-1.png") center / cover no-repeat;
+}
+
+.auth-form {
+  width: 100%;
+  max-width: 420px;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(0, 0, 0, 0.85);
+  border: var(--border-pink);
+  border-radius: 12px;
+  box-shadow: 0 0 24px rgba(255, 0, 128, 0.25);
+}
+
+.auth-form h2 {
+  font-family: var(--font-headline);
+  color: var(--primary-pink);
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+  margin-bottom: 1.15rem;
+}
+
+.form-group label {
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  color: var(--white);
+}
+
+.form-group input {
+  padding: 0.65rem 0.85rem;
+  background-color: var(--black);
+  color: var(--white);
+  border: var(--border-purple);
+  border-radius: 6px;
+  font-family: var(--font-body);
+  font-size: 1rem;
+}
+
+.form-group input:focus {
+  outline: none;
+  border: var(--border-blue);
+}
+
+.auth-error {
+  color: var(--primary-pink);
+  font-size: 0.9rem;
+  text-align: center;
+  margin: 0 0 1rem;
+}
+
+.auth-form .btn {
+  align-self: center;
+  margin-top: 0.5rem;
+  cursor: pointer;
+}
+
+.auth-switch {
+  margin-top: 1.35rem;
+  margin-bottom: 0;
+  text-align: center;
+  font-size: 0.9rem;
+  color: var(--white);
+}
+
+.link-btn {
+  background: none;
+  border: none;
+  padding: 0;
+  color: var(--thirdary-blue);
+  text-decoration: underline;
+  cursor: pointer;
+  font: inherit;
+}
+
+.link-btn:hover {
+  color: var(--primary-pink);
+}
