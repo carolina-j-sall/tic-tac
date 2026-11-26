@@ -1,21 +1,3 @@
-<<<<<<< HEAD
-import Leaderboard from "../Components/Leaderboard";
-import PlayAgain from "../Components/PlayAgain";
-
-function App() {
-  const players = [
-    {username: "user-one", score: 120},
-    {username: "user-two", score: 20},
-    {username: "user-three", score: 32}, 
-  ];
-  return (
-    <>
-      <Leaderboard row = {players} />
-      <PlayAgain />
-    </>
-  )
-}
-=======
 import { useState } from "react";
 import LoginPage from "../Pages/Login";
 import CreateAccountPage from "../Pages/Create-account";
@@ -24,7 +6,6 @@ import { getCurrentUser, logoutUser } from "./utils/authStorage";
 export default function App() {
   const [currentUser, setCurrentUser] = useState(() => getCurrentUser());
   const [authView, setAuthView] = useState("login");
->>>>>>> origin
 
   function handleLogout() {
     logoutUser();
