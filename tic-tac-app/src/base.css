@@ -129,8 +129,8 @@ a:hover {
 
 /* --- Media width sizes --- */
 
-/* The largest max-width media query first */
-@media screen and (max-width: 1000px) {
+/* Tablet screen size */
+@media screen and (max-width: 1023px) and (min-width: 768px) {
   body {
     border: 4px solid red;
   }
@@ -154,12 +154,29 @@ a:hover {
   }
 }
 
-/* The smaller media query next in line */
-@media screen and (max-width: 800px) {
+/* Mobile screen size */
+@media screen and (max-width: 767px) {
   body {
+    font-size: 16px;
     border: 4px solid orange;
+    overflow-x: hidden;
   }
-	h1 {
-		font-size: 22px;
+  h1 {
+		font-size: 1.72em;
 	}
+  h2 {
+    font-size: 1.632em;
+  }
+  h3 {
+    font-size: 1.542em;
+  }
+  h4 {
+    font-size: 1.452em;
+  }
+  h5 {
+    font-size: 1.362em;
+  }
+  h6 {
+    font-size: 1.272em;
+  }
 }
