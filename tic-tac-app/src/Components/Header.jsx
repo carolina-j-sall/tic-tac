@@ -1,5 +1,6 @@
 import React from 'react';
 import './Header.css';
+import {Link} from "react-router-dom";
 
 function Header({ currentUser, onLogout }) {
   return (
@@ -9,8 +10,14 @@ function Header({ currentUser, onLogout }) {
       </div>
       
       <nav className="nav-links">
-        <a href="#game">Play</a>
-        <a href="#leaderboard">Leaderboard</a>
+        <ul>
+          <li><Link to="/">Login</Link></li>
+          <li>
+            <Link to="/leaderboard">Leaderboard</Link>
+          </li>
+        </ul>
+        {/* <a href="#game">Play</a>
+        <a href="#leaderboard">Leaderboard</a> */}
         
         {currentUser && (
           <div className="user-info">

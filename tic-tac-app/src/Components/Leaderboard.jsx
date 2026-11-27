@@ -1,5 +1,5 @@
 import "./Leaderboard.css";
-import trophyIcon from "../src/assets/trophy.svg";
+import trophyIcon from "../assets/trophy.svg";
 
 function Leaderboard (props) {
   function createRow (row) {
