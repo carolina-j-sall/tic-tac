@@ -1,7 +1,14 @@
 import "./Leaderboard.css";
 import trophyIcon from "../assets/trophy.svg";
+import PlayAgain from "../Components/PlayAgain";
 
-function Leaderboard (props) {
+function Leaderboard () {
+    const players = [
+    {username: "user1", score: 120},
+    {username: "user2", score: 32},
+    {username: "user3", score: 78},
+  ]
+
   function createRow (row) {
     return (
       <div className="rowContainer" key={row.username}>
@@ -15,9 +22,10 @@ function Leaderboard (props) {
     <div className="leaderboardContainer">
       <h1 className="leaderboardTitle">Leaderboard Poké-tic-tac</h1>
       <p>Let's see who's the leader in our game! Might it be you?</p>
-      <>{props.row.map(createRow)}</>
+      <>{players.map(createRow)}</>
+       <PlayAgain />
     </div>
   )
 }
 
-export default Leaderboard
+export default Leaderboard;
