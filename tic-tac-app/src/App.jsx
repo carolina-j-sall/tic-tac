@@ -1,6 +1,6 @@
 import {BrowserRouter, Routes, Route} from "react-router-dom";
 import LoginPage from "./Pages/Login";
-import Leaderboard from "./Pages/ShowLeaderboard";
+import Leaderboard from "./Components/Leaderboard";
 import Header from "./Components/Header";
 
 function App() {
