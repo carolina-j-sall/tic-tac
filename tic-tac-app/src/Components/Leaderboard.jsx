@@ -1,4 +1,4 @@
-import "../Components/Leaderboard.css";
+import "./Leaderboard.css";
 import trophyIcon from "../src/assets/trophy.svg";
 
 function Leaderboard (props) {

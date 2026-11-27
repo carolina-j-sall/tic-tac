@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { loginUser } from "../src/utils/authStorage";
+import { loginUser } from "../utils/authStorage";
 import "../src/auth.css";
 
 export default function LoginForm({ onLoginSuccess, onSwitchToRegister }) {

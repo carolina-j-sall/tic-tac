@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { registerUser } from "../src/utils/authStorage";
+import { registerUser } from "../utils/authStorage";
 import "../src/auth.css";
 
 export default function CreateAccountForm({ onRegisterSuccess, onSwitchToLogin }) {
