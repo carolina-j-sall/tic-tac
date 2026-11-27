@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { loginUser } from "../utils/authStorage";
-import "../src/auth.css";
+import "../auth.css";
 
 export default function LoginForm({ onLoginSuccess, onSwitchToRegister }) {
   const [username, setUsername] = useState("");

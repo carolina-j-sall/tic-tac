@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { registerUser } from "../utils/authStorage";
-import "../src/auth.css";
+import "../auth.css";
 
 export default function CreateAccountForm({ onRegisterSuccess, onSwitchToLogin }) {
   const [username, setUsername] = useState("");

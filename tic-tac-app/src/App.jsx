@@ -1,6 +1,6 @@
 import { useState } from "react";
-import LoginPage from "../Pages/Login";
-import CreateAccountPage from "../Pages/Create-account";
+import LoginPage from "./Pages/Login";
+import CreateAccountPage from "./Pages/Create-account";
 import { getCurrentUser, logoutUser } from "./utils/authStorage";
 
 export default function App() {
