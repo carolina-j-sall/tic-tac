@@ -1,6 +1,7 @@
 import { useState } from "react";
 import LoginPage from "../Pages/Login";
 import CreateAccountPage from "../Pages/Create-account";
+import GamePage from "../Pages/Game-page";
 import { getCurrentUser, logoutUser } from "./utils/authStorage";
 
 export default function App() {
@@ -15,22 +16,11 @@ export default function App() {
 
   if (currentUser) {
     return (
-      <main className="auth-page">
-        <div className="auth-form" style={{ textAlign: "center" }}>
-          <h2>Welcome, {currentUser.username}!</h2>
-          <p>
-            Wins: {currentUser.wins} | Losses: {currentUser.losses} | Draws:{" "}
-            {currentUser.draws}
-          </p>
-          <button
-            type="button"
-            className="btn btnSecondary"
-            onClick={handleLogout}
-          >
-            Log Out
-          </button>
-        </div>
-      </main>
+      <GamePage
+        user={currentUser}
+        onUserUpdate={setCurrentUser}
+        onLogout={handleLogout}
+      />
     );
   }
 
